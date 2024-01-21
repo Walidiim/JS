@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Contact</title>
+</head>
+<body>
+
+  <div class="container">
+  
+    <form id="contactForm">
+      <label for="contactName">Nom:</label>
+      <input type="text" id="contactName" name="contactName" required>
+
+      <label for="contactEmail">Email:</label>
+      <input type="email" id="contactEmail" name="contactEmail" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="button" onclick="submitContactForm()">Envoyer Message</button>
+    </form>
+  </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+

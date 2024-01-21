@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Accueil</title>
+</head>
+<body>
+
+  <div class="container">
+    
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+       
+        <div class="swiper-slide" style="background-image:url('img/gris.png');">
+          <div class="slide-content">
+            <h2>Journée Portes Ouvertes</h2>
+            <p>Explorez nos programmes passionnants lors de notre journée portes ouvertes. Découvrez des visites, des ateliers et plus encore!</p>
+          </div>
+        </div>
+        
+        <div class="swiper-slide" style="background-image:url('img/gris\ foncé.png');">
+          <div class="slide-content">
+            <h2>Ateliers Interactifs</h2>
+            <p>Participez à nos ateliers interactifs pour avoir une expérience pratique dans le domaine de la programmation et de l'innovation numérique.</p>
+          </div>
+        </div>
+        
+        <div class="swiper-slide" style="background-image:url('img/noir.png');">
+          <div class="slide-content">
+            <h2>Rencontrez notre Équipe</h2>
+            <p>Rencontrez nos experts et discutez des opportunités passionnantes dans le monde de la programmation et de l'innovation.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="swiper-pagination"></div>
+    </div>
+
+   
+    <ul class="tabs">
+      <li class="tab tab-active" onclick="changeTab('axis1')">Axe 1</li>
+      <li class="tab" onclick="changeTab('axis2')">Axe 2</li>
+      <li class="tab" onclick="changeTab('axis3')">Axe 3</li>
+    </ul>
+
+    
+    <div class="content axis1 active">
+      <h2>Programmation Avancée</h2>
+      <img src="img/Capture d'écran 2024-01-20 235513.png" alt="Axe 1 Image">
+      <p>Explorez les aspects avancés de la programmation, y compris les langages de programmation modernes et les techniques de développement.</p>
+    </div>
+    <div class="content axis2">
+      <h2>Design Digital</h2>
+      <img src="img/407922944_868030245322752_195219873714283330_n.jpg" alt="Axe 2 Image">
+      <p>Découvrez le monde du design digital, y compris la conception graphique, l'UX/UI et les tendances actuelles dans le domaine du design.</p>
+    </div>
+    <div class="content axis3">
+      <h2>Innovation Technologique</h2>
+      <img src="img/286036431_5865278836832297_7276439530733201319_n.jpg" alt="Axe 3 Image">
+      <p>Plongez dans l'innovation technologique en explorant les dernières technologies, les tendances émergentes et les opportunités dans le domaine de la tech.</p>
+    </div>
+
+   
+    <form id="registrationForm">
+      <label for="firstName">Prénom:</label>
+      <input type="text" id="firstName" name="firstName" required>
+
+      <label for="lastName">Nom:</label>
+      <input type="text" id="lastName" name="lastName" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label>Classe Actuelle:</label>
+      <label><input type="radio" name="class" value="1ere" required> 1ère</label>
+      <label><input type="radio" name="class" value="Tle" required> Terminale</label>
+
+      <label for="favoriteAxis">Axe Préféré:</label>
+      <select id="favoriteAxis" name="favoriteAxis" required>
+        <option value="" disabled selected>Choisissez un axe</option>
+        <option value="axis1">Axe 1</option>
+        <option value="axis2">Axe 2</option>
+        <option value="axis3">Axe 3</option>
+      </select>
+
+      <button type="button" onclick="submitForm()">S'Inscrire</button>
+    </form>
+  </div>
+
+<div class="dark-mode-toggle" onclick="toggleDarkMode()">Modifier le mode</div>
+
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+   
+<a href="contact.html"><button>Contactez-nous</button></a>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
